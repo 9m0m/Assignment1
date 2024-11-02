@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fall24.hsf301.slot1.fxcontroller.StudentManagementController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField id="txtTitle" fx:id="txtTitle" alignment="CENTER" layoutY="-2.0" prefHeight="66.0" prefWidth="646.0" style="-fx-background-color: grey;" text="Student Management">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TextField>
+            <Label layoutX="348.0" layoutY="121.0" text="ID :" />
+            <Label layoutX="59.0" layoutY="81.0" text="First Name :" />
+            <Label layoutX="60.0" layoutY="121.0" text="Last Name :" />
+            <Label layoutX="91.0" layoutY="159.0" text="Mark :" />
+            <TextField id="txtFirstName" fx:id="txtFirstName" layoutX="124.0" layoutY="77.0" />
+            <TextField id="txtLastName" fx:id="txtLastName" layoutX="124.0" layoutY="117.0" />
+            <TextField id="txtMark" fx:id="txtMark" layoutX="124.0" layoutY="155.0" />
+            <TableView id="stdTable" fx:id="stdTable" layoutX="-1.0" layoutY="255.0" prefHeight="146.0" prefWidth="646.0" style="-fx-background-color: white; -fx-border-color: black;">
+              <columns>
+                <TableColumn id="idColumn" fx:id="id" prefWidth="75.0" text="ID" />
+                <TableColumn id="firstNameColumn" fx:id="firstName" prefWidth="235.20001220703125" text="First Name" />
+                  <TableColumn id="lastNameColumn" fx:id="lastName" prefWidth="174.4000244140625" text="Last Name" />
+                  <TableColumn id="markColumn" fx:id="mark" prefWidth="146.4000244140625" text="Mark" />
+              </columns>
+            </TableView>
+            <Button id="btnCreate" fx:id="btnCreate" layoutX="248.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnCreateOnAction" style="-fx-background-color: gray;" text="Create" />
+            <Button id="btnDelete" fx:id="btnDelete" layoutX="528.0" layoutY="117.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: chocolate;" text="Delete" />
+            <Button id="btnSearchAll" fx:id="btnSearchAll" layoutX="74.0" layoutY="231.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: chocolate;" text="Search All" />
+            <TextField id="txtId" fx:id="txtId" layoutX="366.0" layoutY="117.0" />
+            <Button id="btnUpdate" fx:id="btnUpdate" layoutX="320.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-background-color: chocolate;" text="Update" />
+            <Button id="btnCancel" fx:id="btnCancel" layoutX="396.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnCancelOnAction" text="Cancel" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
